@@ -1,0 +1,30 @@
+#include<stdio.h>
+main(){
+int i,num,a,value;
+double price,sum=0.0;
+scanf("%d",&num);
+for(i=1;i<=num;i++){
+   scanf("%d%d",&a,&value);
+   if(a==1001){
+      price=1.50;
+      sum=sum+price*value;
+      }
+    if(a==1002){
+      price=2.50;
+      sum=sum+price*value;
+      }
+    if(a==1003){
+      price=3.50;
+      sum=sum+price*value;
+      }
+    if(a==1004){
+      price=4.50;
+      sum=sum+price*value;
+      }
+    if(a==1005){
+      price=5.50;
+      sum=sum+price*value;
+      }
+}
+printf("%.2lf\n",sum);
+}

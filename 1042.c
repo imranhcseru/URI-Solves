@@ -1,0 +1,49 @@
+
+#include<stdio.h>
+main(){
+    int a,b,c,max,mid,min;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b){
+        if(a>c){
+                if(b>c){
+                max=a;
+                mid=b;
+                min=c;
+                }
+                else{
+                max=a;
+                mid=c;
+                min=b;
+                }
+            }
+        else{
+            max=c;
+            mid=a;
+            min=b;
+            }
+    }
+        else{
+            if(b>c){
+                if(a>c){
+                    max=b;
+                    mid=a;
+                    min=c;
+                    }
+                else{
+                    max=b;
+                    mid=c;
+                    min=a;
+                    }
+            }
+             else
+                {
+                max=c;
+                mid=b;
+                min=a;
+                }
+    }
+    printf("%d\n%d\n%d\n",min,mid,max);
+    printf("\n");
+    printf("%d\n%d\n%d\n",a,b,c);
+}
+ 
